@@ -70,3 +70,27 @@
   background-color: #0f14191a;
   border-radius: 9999px;
 }
+
+.button{
+    background-color: lightgray;
+    border: 1px solid transparent;
+    border: none;
+    outline: none;
+    padding: 0 16px;
+    font-size: 15px;
+    border-radius: 9999px;
+    font-weight: bold;
+    line-height: 20px;
+    min-height: 36px;
+}
+
+.button--primary{
+    background-color: rgb(29, 155, 240);
+    color: white;
+}
+
+.nav__tweet{
+    width: 90%;
+    min-height: 52px;
+    margin: 4px 0;
+}
