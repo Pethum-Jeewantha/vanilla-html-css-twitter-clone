@@ -3,7 +3,7 @@
 }
 
 .page__nav{
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 .page__main{
@@ -14,10 +14,41 @@
     background-color: blue;
 }
 
-.nav__icon{
+.nav__logo {
     width: 50px;
     height: 30px;
-    color:rgb(29, 155, 240);
+    color: rgb(29, 155, 240);
     fill: currentColor;
-}
-
+  }
+  
+  .menu-item{
+      padding: 12px 0;
+      cursor: pointer;
+  }
+  
+  .nav__menu{
+      list-style-type: none;
+  }
+  
+  .menu-item__icon {
+    width: 24px;
+    height: 1.75rem;
+    display: inline;
+  }
+  
+  .menu-item__link{
+      margin: 0 20px 0 16px;
+      text-decoration: none;
+      color: rgb(15, 20, 25);
+      font-size: 20px;
+  }
+  
+  .menu-item__wrapper{
+      display: inline;
+      padding: 12px 12px;
+  }
+  
+  .menu-item__wrapper:hover{
+      background-color: #0F14191A;
+      border-radius: 9999px;
+  }
