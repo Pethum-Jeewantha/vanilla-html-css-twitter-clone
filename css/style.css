@@ -83,6 +83,17 @@ textarea {
   resize: vertical;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+*:not(svg){
+  box-sizing: border-box;
+}
+
+html{
+  font-family: TwitterChirp, 'sans-serif';
+}
+
+@font-face {
+  font-family: 'TwitterChirp';
+  src: url(../fonts/chirp-regular-web.woff) format("woff"),
+       url(../fonts/chirp-bold-web.woff) format("woff"),
+       url(../fonts/chirp-heavy-web.woff) format("woff");
+}
