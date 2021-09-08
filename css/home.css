@@ -24,6 +24,8 @@
   .menu-item{
       padding: 12px 0;
       cursor: pointer;
+      display: flex;
+      align-items: center;
   }
   
   .nav__menu{
@@ -31,9 +33,8 @@
   }
   
   .menu-item__icon {
-    width: 24px;
+    width: 1.75rem;
     height: 1.75rem;
-    display: inline;
   }
   
   .menu-item__link{
@@ -41,11 +42,15 @@
       text-decoration: none;
       color: rgb(15, 20, 25);
       font-size: 20px;
+      vertical-align: middle;
+  }
+
+  .menu-item__link--active{
+      font-weight: bold;
   }
   
   .menu-item__wrapper{
-      display: inline;
-      padding: 12px 12px;
+      padding: 12px;
   }
   
   .menu-item__wrapper:hover{
