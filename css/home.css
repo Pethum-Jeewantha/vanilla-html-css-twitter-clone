@@ -1,26 +1,53 @@
 .page {
   display: flex;
+  justify-content: center;
 }
 
 .page__nav {
   padding-top: 1px;
 }
 
+.main {
+  width: 600px;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+
+.aside {
+  width: 350px;
+  flex-shrink: 0;
+  border-right: 1px solid lightgray;
+}
+
+.main,
+aside {
+  padding: 10px;
+}
+
 .page__main {
-  background-color: green;
+  background-color: white;
 }
 
 .page__aside {
-  background-color: blue;
+  background-color: white;
 }
 
 .nav {
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
   height: 100vh;
 }
 
+.nav::before {
+  content: "";
+  display: block;
+  width: 275px;
+}
+
 .nav__content-wrapper {
+  align-self: flex-end;
+  position: fixed;
   width: 275px;
   padding: 0 12px;
   height: 100%;
@@ -178,6 +205,12 @@
   fill: white;
 }
 
+@media all and (max-width: 1089px) {
+  .aside {
+    width: 290px;
+  }
+}
+
 @media all and (max-width: 1019px) {
   .menu-item__link {
     display: none;
@@ -200,8 +233,21 @@
     display: none;
   }
 
+  .menu-item {
+    justify-content: center;
+  }
+
+  .nav__logo-wrapper {
+    width: 100%;
+  }
+
   .nav__content-wrapper {
-    width: 74px;
+    width: 88px;
+    text-align: center;
+  }
+
+  .nav::before {
+    width: 88px;
   }
 
   .user {
@@ -217,5 +263,56 @@
 
   #explore-icon {
     display: none;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .aside {
+    display: none;
+  }
+}
+
+@media all and (min-width: 481px) and (max-width: 610px) {
+  .nav::before {
+    width: 78px;
+  }
+
+  .nav__content-wrapper {
+    width: 78px;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .nav::before {
+    display: none;
+  }
+
+  .nav__logo-wrapper {
+    display: none;
+  }
+
+  .user,
+  .nav__tweet {
+    display: none;
+  }
+
+  .menu-item:not(.menu-item:first-child, .menu-item:nth-child(2), .menu-item:nth-child(3), .menu-item:nth-child(4)) {
+    display: none;
+  }
+
+  .nav__content-wrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    top: 52px;
+    bottom: 0;
+  }
+
+  .nav__menu {
+    display: flex;
+    justify-content: space-between;
   }
 }
