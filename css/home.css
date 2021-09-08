@@ -14,6 +14,11 @@
   background-color: blue;
 }
 
+.nav{
+    width: 275px;
+    padding: 0 12px;
+}
+
 .nav__logo {
   width: 50px;
   height: 30px;
@@ -79,7 +84,7 @@
     padding: 0 16px;
     font-size: 15px;
     border-radius: 9999px;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 20px;
     min-height: 36px;
 }
@@ -93,4 +98,60 @@
     width: 90%;
     min-height: 52px;
     margin: 4px 0;
+    font-size: 17px;
+}
+
+.user{
+    display: grid;
+    grid-template-areas: 
+    "image name options"
+    "image handle options";
+    padding: 12px;
+    column-gap: 12px;
+}
+
+.nav__user{
+    margin: 12px 0;
+}
+
+.user:hover{
+    background-color: #0f14191a;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+
+.user__image{
+    grid-area: image;
+    align-self: center;
+    width: 38px;
+}
+
+.user__image>img{
+    width: 38px;
+    height: 38px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.user__name{
+    font-weight: bold;
+    font-size: 15px;
+    grid-area: name;
+    white-space: nowrap;
+    max-width: cal(100% - 38px -24px);
+    overflow: hidden;
+}
+
+.user__handle{
+    grid-area: handle;
+    font-size: 15px;
+    color: rgb(83, 100, 113);
+}
+
+.user__options{
+    align-self: center;
+    grid-area: options;
+    width: 28px;
+    justify-self: end;
+    fill: rgb(15, 20, 25);
 }
