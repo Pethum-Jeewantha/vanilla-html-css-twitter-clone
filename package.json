@@ -7,7 +7,7 @@
   "author": "Pethum Jeewantha <pethumjeewantha4@gmail.com> (https://pethumjeewantha.com)",
   "scripts": {
     "clean":"rm -rf docs",
-    "build": "parcel build index.html 404.html --out-dir docs",
+    "build": "parcel build index.html 404.html --out-dir docs --public-url /vanilla-html-css-twitter-clone/",
     "dev": "parcel index.html --open",
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
