@@ -236,12 +236,12 @@ aside {
   column-gap: 10px;
 }
 
-.post__image {
+.main-avatar {
   width: 48px;
   grid-area: image;
 }
 
-.post__image img {
+.main-avatar img {
   width: 48px;
   height: 48px;
   border-radius: 100%;
@@ -312,6 +312,8 @@ aside {
   height: 20px;
   fill: rgb(29, 155, 240);
 }
+
+
 
 @media all and (max-width: 1089px) {
   .aside {
