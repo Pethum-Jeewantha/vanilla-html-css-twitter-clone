@@ -19,10 +19,10 @@
   border-right: 1px solid lightgray;
 }
 
-.main,
+/* .main,
 aside {
   padding: 10px;
-}
+} */
 
 .page__main {
   background-color: white;
@@ -129,6 +129,7 @@ aside {
   font-weight: 600;
   line-height: 20px;
   min-height: 36px;
+  cursor: pointer;
 }
 
 .button--primary {
@@ -203,6 +204,113 @@ aside {
   width: 24px;
   height: 24px;
   fill: white;
+}
+
+.header {
+  height: 53px;
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding: 0 10px;
+}
+
+.header__home {
+  font-weight: 800;
+}
+
+.header__icon {
+  height: 20px;
+  width: 20px;
+}
+
+.post__tweeting {
+  padding: 4px 16px;
+  border-bottom: 1px solid lightgray;
+  display: grid;
+  grid-template-areas:
+    "image post-content"
+    "image post-bottom";
+  column-gap: 10px;
+}
+
+.post__image {
+  width: 48px;
+  grid-area: image;
+}
+
+.post__image img {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.post__content {
+  grid-area: post-content;
+  width: 508px;
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+
+.post__content input {
+  width: 100%;
+  font-size: 20px;
+  border: 0;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.post__bottom {
+  grid-area: post-bottom;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.post__focuswithin {
+  display: none;
+  height: 25px;
+  padding: 0 10px;
+  width: max-content;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.post__content:focus-within {
+  border-bottom: 1px solid lightgray;
+}
+
+.post__content:focus-within .post__focuswithin {
+  display: flex;
+  align-items: center;
+  padding: 0 8px 0 0;
+  color: rgb(29, 155, 240);
+  font-weight: bold;
+}
+
+.post__icons svg:hover,
+.post__content:focus-within .post__focuswithin:hover {
+  background-color: rgb(29, 155, 240, 0.1);
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.post__focuswithin svg {
+  padding: 8px;
+  width: 15px;
+  fill: rgb(29, 155, 240);
+}
+
+.post__icons svg {
+  padding: 7px;
+  width: 20px;
+  height: 20px;
+  fill: rgb(29, 155, 240);
 }
 
 @media all and (max-width: 1089px) {
