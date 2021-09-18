@@ -486,55 +486,56 @@ aside {
   border: 1px solid rgb(29, 155, 240);
 }
 
-.trending{
+.aside-block{
   padding: 10px 0 0 0;
-  background-color: #c7d7e91a;
+  background-color: #acbac91a;
   border-radius: 20px;
 }
 
-.trending__topic>svg{
+.aside-block__topic>svg{
   width: 20px;
   height: 20px;
   padding: 8px;
   cursor: pointer;
 }
 
-.trending__topic>svg:hover{
+.aside-block__topic>svg:hover{
   background-color: #545a611a;
   border-radius: 100%;
 }
 
-.trending__topic{
+.aside-block__topic{
+  font-family: TwitterChirp;
   padding: 0 10px;
   display: flex;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 20px;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 5px;
 }
 
-.trending__item{
+.aside-block__item{
   padding: 15px 10px;
   cursor: pointer;
 }
 
-.trending__item svg{
+.aside-block__item svg{
   padding: 5px;
 }
 
-.trending__item svg:hover {
+.aside-block__item svg:hover {
   background-color: rgb(29, 155, 240, 0.1);
   border-radius: 999px;
   fill: rgb(29, 155, 240);
 }
 
-.trending__show-more:hover,
-.trending__item:hover{
+.aside-block__show-more:hover,
+.aside-block__item:hover{
   background-color: #545a611a;
 }
 
-.trending__item p{
+.aside-block__item p{
   margin: 0;
   font-size: 13px;
   margin-bottom: 2px;
@@ -545,7 +546,7 @@ aside {
   font-weight: bold;
 }
 
-.trending__item p:last-child{
+.aside-block__item p:last-child{
   color: rgb(83, 100, 113);
 }
 
@@ -561,11 +562,95 @@ aside {
   width: 18.75px;
 }
 
-.trending__show-more{
+.aside-block__show-more{
   color: rgb(29, 155, 240);
   padding: 15px 10px;
   border-radius: 0 0 20px 20px;
   cursor: pointer;
+}
+
+.follow-block{
+  margin-top: 20px;
+}
+
+.follow-item {
+  display: grid;
+  grid-template-areas:
+    "image name options"
+    "image handle options";
+  padding: 12px 12px;
+  column-gap: 2px;
+}
+
+.follow__image {
+  grid-area: image;
+  align-self: center;
+  width: 38px;
+}
+
+.follow__image > img {
+  width: 38px;
+  height: 38px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.follow__name {
+  font-weight: bold;
+  font-size: 15px;
+  grid-area: name;
+  white-space: nowrap;
+  max-width: cal(100% - 38px -24px);
+  overflow: hidden;
+}
+
+.follow__handle {
+  grid-area: handle;
+  font-size: 15px;
+  color: rgb(83, 100, 113);
+}
+
+.follow__options {
+  align-self: center;
+  grid-area: options;
+  justify-self: end;
+  fill: rgb(15, 20, 25);
+}
+
+.botton-follow{
+  color: white;
+  background-color: black;
+}
+
+.footer{
+  margin-top: 15px;
+  padding-left: 10px;
+}
+
+.footer__menu{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: rgb(83, 100, 113);
+  margin-bottom: 3px;
+}
+
+.footer__menu li{
+  margin-right: 10px;
+}
+
+.footer__menu *:not(.footer__bottom-menu li:last-child){
+  cursor: pointer;
+}
+
+.footer__menu *:not(.footer__bottom-menu li:last-child):hover{
+  text-decoration: underline;
+}
+
+.footer__bottom-menu svg{
+  width: 17px;
+  height: 13px;
 }
 
 @media all and (max-width: 1089px) {

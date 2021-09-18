@@ -831,10 +831,14 @@
             d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
           ></path>
         </svg>
-        <input placeholder="Search Twitter" class="aside__search" type="search" />
+        <input
+          placeholder="Search Twitter"
+          class="aside__search"
+          type="search"
+        />
       </div>
-      <div class="trending aside__trending">
-        <section class="trending__topic">
+      <div class="aside-block aside__trending">
+        <section class="aside-block__topic">
           <div>Trends for you</div>
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <g>
@@ -847,14 +851,10 @@
             </g>
           </svg>
         </section>
-        <section class="trending__item">
-          <div
-          class="item__first-line">
+        <section class="aside-block__item">
+          <div class="item__first-line">
             <p>News - Trending</p>
-            <svg
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
               <g>
                 <circle cx="5" cy="12" r="2"></circle>
                 <circle cx="12" cy="12" r="2"></circle>
@@ -865,14 +865,10 @@
           <p class="item__hash-tag">#BreakingNews</p>
           <p>7,250 Tweets</p>
         </section>
-        <section class="trending__item">
-          <div
-          class="item__first-line">
+        <section class="aside-block__item">
+          <div class="item__first-line">
             <p>News - Trending</p>
-            <svg
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
               <g>
                 <circle cx="5" cy="12" r="2"></circle>
                 <circle cx="12" cy="12" r="2"></circle>
@@ -883,14 +879,10 @@
           <p class="item__hash-tag">#BreakingNews</p>
           <p>7,250 Tweets</p>
         </section>
-        <section class="trending__item">
-          <div
-          class="item__first-line">
+        <section class="aside-block__item">
+          <div class="item__first-line">
             <p>News - Trending</p>
-            <svg
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
               <g>
                 <circle cx="5" cy="12" r="2"></circle>
                 <circle cx="12" cy="12" r="2"></circle>
@@ -901,14 +893,10 @@
           <p class="item__hash-tag">#BreakingNews</p>
           <p>7,250 Tweets</p>
         </section>
-        <section class="trending__item">
-          <div
-          class="item__first-line">
+        <section class="aside-block__item">
+          <div class="item__first-line">
             <p>News - Trending</p>
-            <svg
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
               <g>
                 <circle cx="5" cy="12" r="2"></circle>
                 <circle cx="12" cy="12" r="2"></circle>
@@ -919,8 +907,69 @@
           <p class="item__hash-tag">#BreakingNews</p>
           <p>7,250 Tweets</p>
         </section>
-        <div class="trending__show-more">Show more</div>
+        <div class="aside-block__show-more">Show more</div>
       </div>
+      <div class="aside-block follow-block">
+        <div class="aside-block__topic">
+          <div>Who to follow</div>
+        </div>
+        <div class="aside-block__item follow-item">
+          <div class="follow__image">
+            <img src="img/avatar.png" alt="user-image" />
+          </div>
+          <div class="follow__name">Avatar avatar avatar avatar</div>
+          <div class="follow__handle">@avatar123</div>
+          <div class="follow__options">
+            <button class="button botton-follow">Follow</button>
+          </div>
+        </div>
+        <div class="aside-block__item follow-item">
+          <div class="follow__image">
+            <img src="img/avatar.png" alt="user-image" />
+          </div>
+          <div class="follow__name">Avatar avatar avatar avatar</div>
+          <div class="follow__handle">@avatar123</div>
+          <div class="follow__options">
+            <button class="button botton-follow">Follow</button>
+          </div>
+        </div>
+        <div class="aside-block__item follow-item">
+          <div class="follow__image">
+            <img src="img/avatar.png" alt="user-image" />
+          </div>
+          <div class="follow__name">Avatar avatar avatar avatar</div>
+          <div class="follow__handle">@avatar123</div>
+          <div class="follow__options">
+            <button class="button botton-follow">Follow</button>
+          </div>
+        </div>
+        <div class="aside-block__show-more">Show more</div>
+      </div>
+      <footer class="footer">
+        <menu class="footer__menu footer__top-menu">
+          <li>Terms of Service</li>
+          <li>Privacy Policy</li>
+          <li>Cookie Policy</li>
+        </menu>
+        <menu class="footer__menu footer__bottom-menu">
+          <li>Ads info</li>
+          <li>
+            More
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              fill="rgb(83, 100, 113)"
+            >
+              <g>
+                <circle cx="5" cy="12" r="2"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+                <circle cx="19" cy="12" r="2"></circle>
+              </g>
+            </svg>
+          </li>
+          <li>&copy; Twitter, Inc.</li>
+        </menu>
+      </footer>
     </aside>
 
     <script src="js/plugins.js"></script>
