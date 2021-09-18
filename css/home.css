@@ -14,15 +14,13 @@
 }
 
 .aside {
-  width: 350px;
+  width: 340px;
   flex-shrink: 0;
-  border-right: 1px solid lightgray;
 }
 
-/* .main,
 aside {
-  padding: 10px;
-} */
+  margin-left: 30px;
+}
 
 .page__main {
   background-color: white;
@@ -31,6 +29,8 @@ aside {
 .page__aside {
   background-color: white;
 }
+
+/* nav */
 
 .nav {
   display: flex;
@@ -210,6 +210,8 @@ aside {
   fill: white;
 }
 
+/* main */
+
 .header {
   height: 53px;
   width: 100%;
@@ -233,7 +235,7 @@ aside {
 
 .header__icon {
   height: 20px;
-  width: 20px;
+  width: 20px; TODO: hover
 }
 
 .post__tweeting {
@@ -442,6 +444,128 @@ aside {
 .tweet__icons *:nth-child(3):hover svg {
   fill: rgb(241, 15, 223);
   background-color: rgb(255, 223, 252);
+}
+
+/* aside */
+
+.aside__search-icon {
+  width: 20px;
+  height: 20px;
+  color: #9aa0a6;
+  fill: currentColor;
+}
+
+.aside__search-wrapper {
+  display: flex;
+  background-color: #7a848f1a;
+  border-radius: 24px;
+  height: 40px;
+  width: 100%;
+  align-items: center;
+  margin: auto;
+  margin-top: 6px;
+  padding-left: 14px;
+  padding-right: 8px;
+  margin-bottom: 18px;
+}
+
+.aside__search {
+  background-color: transparent;
+  width: 100%;
+  margin-left: 13px;
+  border: none;
+  outline: none;
+}
+
+.aside__search-wrapper:focus-within .aside__search-icon{
+  fill: rgb(29, 155, 240);
+}
+
+.aside__search-wrapper:focus-within {
+  background-color: white;
+  border: 1px solid rgb(29, 155, 240);
+}
+
+.trending{
+  padding: 10px 0 0 0;
+  background-color: #c7d7e91a;
+  border-radius: 20px;
+}
+
+.trending__topic>svg{
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.trending__topic>svg:hover{
+  background-color: #545a611a;
+  border-radius: 100%;
+}
+
+.trending__topic{
+  padding: 0 10px;
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.trending__item{
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.trending__item svg{
+  padding: 5px;
+}
+
+.trending__item svg:hover {
+  background-color: rgb(29, 155, 240, 0.1);
+  border-radius: 999px;
+  fill: rgb(29, 155, 240);
+}
+
+.trending__show-more:hover,
+.trending__item:hover{
+  background-color: #545a611a;
+}
+
+.trending__item p{
+  margin: 0;
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+.item__hash-tag{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.trending__item p:last-child{
+  color: rgb(83, 100, 113);
+}
+
+.item__first-line{
+  display: flex;
+  align-items: center;
+  color: rgb(83, 100, 113);
+  justify-content: space-between;
+  height: 16px;
+}
+
+.item__first-line>svg{
+  width: 18.75px;
+}
+
+.trending__show-more{
+  color: rgb(29, 155, 240);
+  padding: 15px 10px;
+  border-radius: 0 0 20px 20px;
+  cursor: pointer;
 }
 
 @media all and (max-width: 1089px) {
