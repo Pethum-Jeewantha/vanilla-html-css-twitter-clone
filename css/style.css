@@ -97,3 +97,12 @@ html{
        url(../fonts/chirp-bold-web.woff) format("woff"),
        url(../fonts/chirp-heavy-web.woff) format("woff");
 }
+
+@font-face {
+  font-family: TwitterChirp;
+  src: url(https://abs.twimg.com/fonts/v2/chirp-heavy-web.woff2) format("woff2");
+  src: url(https://abs.twimg.com/fonts/v2/chirp-heavy-web.woff) format("woff");
+  font-weight: 800;
+  font-style: "normal";
+  font-display: "swap";
+}
