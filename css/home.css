@@ -235,7 +235,14 @@ aside {
 
 .header__icon {
   height: 20px;
-  width: 20px; TODO: hover
+  width: 20px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 999px;
+}
+
+.header__icon:hover{
+  background-color: #909ca81a;
 }
 
 .post__tweeting {
@@ -357,6 +364,7 @@ aside {
 
 .topic-left {
   display: flex;
+  align-items: center;
 }
 
 .topic > svg {
@@ -740,9 +748,14 @@ aside {
     display: none;
   }
 
-  .user,
-  .nav__tweet {
+  .user {
     display: none;
+  }
+
+  .nav__tweet{
+    position: fixed;
+    top: 80vh;
+    right: 5vw;
   }
 
   .menu-item:not(.menu-item:first-child, .menu-item:nth-child(2), .menu-item:nth-child(3), .menu-item:nth-child(4)) {
@@ -754,13 +767,29 @@ aside {
     left: 0;
     right: 0;
     background-color: white;
+    top: 93vh;
     width: 100%;
-    top: 52px;
-    bottom: 0;
   }
 
   .nav__menu {
     display: flex;
     justify-content: space-between;
+  }
+
+  .post__tweeting{
+    display: none;
+  }
+
+  .tweet__description-image img{
+    width: 78vw;
+  }
+
+  .first-tweet{
+    margin-top: 53px;
+  }
+
+  .tweets,
+  .page__main{
+    width: 100vw;
   }
 }
