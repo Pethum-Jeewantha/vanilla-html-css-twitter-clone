@@ -625,9 +625,13 @@ aside {
   fill: rgb(15, 20, 25);
 }
 
-.botton-follow{
+.button-follow{
   color: white;
   background-color: black;
+}
+
+.button-follow:hover{
+  background-color: rgb(53, 53, 53);
 }
 
 .footer{
