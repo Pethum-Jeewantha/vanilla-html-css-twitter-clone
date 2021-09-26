@@ -18,16 +18,19 @@
   flex-shrink: 0;
 }
 
-aside {
-  margin-left: 30px;
-}
-
 .page__main {
   background-color: white;
 }
 
 .page__aside {
   background-color: white;
+  margin-left: 30px;
+}
+
+.aside__content-wrapper{
+  position: sticky;
+  top: 0;
+  width: 340px;
 }
 
 /* nav */
