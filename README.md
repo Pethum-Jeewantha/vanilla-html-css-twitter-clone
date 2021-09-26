@@ -15,7 +15,6 @@
     <li>
       <a href="#getting-started">Getting Started</a>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
@@ -24,11 +23,11 @@
 
 ## About The Project
 
-* This repository is a clone of twitter website & this website built for experiment purposes only.
+This repository is a clone of twitter website & this website built for experiment purposes only.
 
 ## Getting Started
 
-* This website is hosted at [github page](https://pethum-jeewantha.github.io/vanilla-html-css-twitter-clone/).
+This website is hosted at [github page](https://pethum-jeewantha.github.io/vanilla-html-css-twitter-clone/).
 
 ## License
 
